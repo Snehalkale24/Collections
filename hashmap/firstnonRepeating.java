@@ -46,7 +46,7 @@ public class firstnonRepeating{
 		for(int i=0;i<str.length();i++)
 		{
 			char ch=str.charAt(i);
-			if(map.get(ch==1))
+			if(map.get(ch)==1)
 			{
 				System.out.println(ch);
 			}
