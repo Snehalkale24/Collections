@@ -23,11 +23,11 @@ import java.util.*;
 public class findRepeating{
 	public static void main(String args[])
 	{
-		String str="snehall";
+		String s="snehall";
 		HashMap<Character,Integer>map=new HashMap<>();
-		for(int i=0;i<str.length();i++)
+		for(int i=0;i<s.length();i++)
 		{
-			char ch=str.charAt(i);
+			char ch=s.charAt(i);
 			if(map.containsKey(ch))
 			{
 				System.out.println(ch);
