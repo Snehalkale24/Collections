@@ -1,31 +1,3 @@
-// import java.util.*;
-// public class anagram{
-// 	public static void main(String args[])
-// 	{
-// 		String s1="silent";
-// 		String s2="list";
-
-// 		HashMap<Character,Integer>map=new HashMap<>();
-// 		for(int i=0;i<s1.length();i++)
-// 		{
-// 			char ch=s1.charAt(i);
-// 			if(map.containsKey(ch))
-// 			{
-// 				map.put(ch,map.get(ch)+1);
-// 			}
-// 			else{
-// 				map.put(ch,1);
-// 			}
-// 		}
-// 		for(int i=0;i<s2.length();i++)
-// 		{
-// 			char ch=s2.charAt(i);
-// 			map.put(ch,map.get(ch)-1);
-// 		}
-// 		System.out.println(map);
-// 	}
-// }
-
 
 import java.util.*;
 
@@ -42,24 +14,24 @@ public class anagram {
         HashMap<Character, Integer> map = new HashMap<>();
 
         for (int i = 0; i < s1.length(); i++) {
-            char ch = s1.charAt(i);
+            char ch1 = s1.charAt(i);
 
-            if (map.containsKey(ch)) {
-                map.put(ch, map.get(ch) + 1);
+            if (map.containsKey(ch1)) {
+                map.put(ch1, map.get(ch1) + 1);
             } else {
-                map.put(ch, 1);
+                map.put(ch1, 1);
             }
         }
 
         for (int i = 0; i < s2.length(); i++) {
-            char ch = s2.charAt(i);
+            char ch2 = s2.charAt(i);
 
-            if (!map.containsKey(ch)) {
+            if (!map.containsKey(ch2)) {
                 System.out.println("not");
                 return;
             }
 
-            map.put(ch, map.get(ch) - 1);
+            map.put(ch2, map.get(ch2) - 1);
         }
 
         for (int value : map.values()) {
@@ -72,3 +44,5 @@ public class anagram {
         System.out.println("Anagram");
     }
 }
+
+
